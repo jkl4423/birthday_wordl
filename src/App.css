@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  background-image: linear-gradient(120deg, #00a1b7, #0054b7 100%);
+  color: white;
+  font-family: "Poppins",sans-serif;
   min-height: 100vh;
+}
+
+header{
+  font-size: 2rem;
+}
+
+header,
+.gameDiv,
+.buttonDiv,
+.winnerDiv{
+  min-height: 20vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameContainer{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px 70px;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px;
+  color: black;
+}
+
+.field{
+  font-size: 50px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 15px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 0.5rem;
+  margin: 30px;
+  font-size: 1.5rem;
+  border: 1px black;
+  color: #5d9ff5;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.charBtnContainer{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+  grid-template-rows: 80px 80px 80px;
+  color: black;
+}
+
+button:hover{
+  background-color: #bce9f5;
+}
+
+.charBtn{
+  background-color: white;
+  color: #5d9ff5;
+  padding: 0.1rem;
+  margin: 5px;
+}
+
+.disabled{
+  background-color: lightgray;
+  color: dimgrey;
 }
