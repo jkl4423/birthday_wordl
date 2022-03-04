@@ -1,88 +1,104 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background-image: linear-gradient(120deg, #00a1b7, #0054b7 100%);
-  color: white;
-  font-family: "Poppins",sans-serif;
-  min-height: 100vh;
-}
-
-header{
-  font-size: 2rem;
-}
-
-header,
-.gameDiv,
-.buttonDiv,
-.winnerDiv{
-  min-height: 20vh;
+.container{
   display: flex;
-  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   align-items: center;
 }
-
-.gameContainer{
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 70px 70px 70px 70px 70px;
-  grid-template-rows: 80px 80px 80px 80px 80px 80px;
-  color: black;
+.message{
+  position: absolute;
+  top:10%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  background: #787c7e;
+  font-size: 16px;
 }
 
-.field{
-  font-size: 50px;
-  height: 70px;
-  width: 70px;
+.title{
+  letter-spacing: 0.2rem;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.cube-row{
   display: flex;
-  border: 1px solid black;
-  border-radius: 15px;
+  flex-direction: row;
+  gap:5px;
+}
+
+.cube{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+.letter{
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  font-size: 32px;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #d3d6da;
 }
 
-button{
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  height: 50px;
-  width: 50px;
-  padding: 0.5rem;
-  margin: 30px;
-  font-size: 1.5rem;
-  border: 1px black;
-  color: #5d9ff5;
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.reset-board{
+  padding: 5px 5px 5px 20px;
+  background: none;
+  color: #6aaa64;
+  font-size: 38px;
 }
 
-.charBtnContainer{
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px;
-  grid-template-rows: 80px 80px 80px;
-  color: black;
+.top{
+  display: flex;
+  flex-direction: row;
+  padding:10px 20px;
+  border-bottom: 1px solid grey;
+}
+.bottom{
+
 }
 
-button:hover{
-  background-color: #bce9f5;
+.cube-row.error {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
-.charBtn{
-  background-color: white;
-  color: #5d9ff5;
-  padding: 0.1rem;
-  margin: 5px;
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
-.disabled{
-  background-color: lightgray;
-  color: dimgrey;
+.correct{
+  background: #6aaa64;
+  color: #fff;
+
+}
+
+.present{
+  background: #c9b458;
+  color: #fff;
+}
+
+.absent{
+  background: #787c7e;
+  color: #fff;
 }

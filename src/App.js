@@ -1,13 +1,10 @@
 import './App.css';
-import WordleGame from "./components/WordleGame";
+import Game from "./components/Game";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Wordl</h1>
-      </header>
-      <WordleGame/>
+      <Game/>
     </div>
   );
 }
