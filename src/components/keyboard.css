@@ -1,4 +1,4 @@
-.keyboard-rows{
+.keyRows{
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -18,9 +18,11 @@ button{
     font-weight: bold;
     cursor: pointer;
     background: #fff;
-    padding: 22px 18px;
+    /*padding: 22px 18px;*/
     border: none;
     text-transform: uppercase;
+    height: 50px;
+    width: 50px;
 }
 
 .key-correct{

@@ -4,9 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCheckCircle, faDeleteLeft} from "@fortawesome/free-solid-svg-icons";
 
 const chars = [
-    ['q','w','e','r','t','y','u','i','o','p'],
-    ['a','s','d','f','g','h','j','k','l'],
-    ['ENTER','z','x','c','v','b','n','m','DELETE']
+    ['a','b','c','d','e','f'],
+    ['g','h','i','j','k','l'],
+    ['m','n','o','p','q','r'],
+    ['s','t','u','v','w','x'],
+    ['ENTER','y','z','DELETE'],
+    // ['q','w','e','r','t','y','u','i','o','p'],
+    // ['a','s','d','f','g','h','j','k','l'],
+    // ['ENTER','z','x','c','v','b','n','m','DELETE']
 ];
 
 const Keyboard = (props) => {

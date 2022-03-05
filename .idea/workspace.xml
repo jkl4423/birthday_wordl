@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="72d38e98-b533-47fc-85c1-b8732c54e342" name="Changes" comment="pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keyboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/keyboard.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.start">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -84,9 +87,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +103,7 @@
       <updated>1646409662559</updated>
       <workItem from="1646409667866" duration="7781000" />
       <workItem from="1646422275916" duration="15667000" />
+      <workItem from="1646483227583" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="birthday implementation">
       <created>1646431106788</created>
