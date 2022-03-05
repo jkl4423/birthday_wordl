@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/birthday_wordl/static/css/main.b944f789.css",
-    "main.js": "/birthday_wordl/static/js/main.e40de61a.js",
+    "main.css": "/birthday_wordl/static/css/main.77afaf42.css",
+    "main.js": "/birthday_wordl/static/js/main.62cd321e.js",
     "index.html": "/birthday_wordl/index.html",
-    "main.b944f789.css.map": "/birthday_wordl/static/css/main.b944f789.css.map",
-    "main.e40de61a.js.map": "/birthday_wordl/static/js/main.e40de61a.js.map"
+    "main.77afaf42.css.map": "/birthday_wordl/static/css/main.77afaf42.css.map",
+    "main.62cd321e.js.map": "/birthday_wordl/static/js/main.62cd321e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b944f789.css",
-    "static/js/main.e40de61a.js"
+    "static/css/main.77afaf42.css",
+    "static/js/main.62cd321e.js"
   ]
 }
