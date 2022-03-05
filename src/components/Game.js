@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Keyboard from "./Keyboard";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faRedo} from "@fortawesome/free-solid-svg-icons";
 
 const wordToFind = "steak";
 
@@ -139,7 +141,7 @@ const Game = () => {
             }
             return;
         }
-        if(key==="⌫"){
+        if(key==="DELETE"){
             charArray.splice(charArray.length-1,1);
             setCharArray([...charArray]);
         } else if (charArray.length<5){
@@ -152,18 +154,21 @@ const Game = () => {
     return (
         <div className='container'>
             <div className='top'>
-                <div className='title'>Kathis Wordle</div>
-                <button className="reset-board" onClick={startNewGame}>{"\u27f3"}</button>
+                <div className='title'>Kordle</div><br/>
+                <div className='subTitle'>
+                    <div>Kathis Geburtstags Wordle</div>
+                    <FontAwesomeIcon className="resetBtn" icon={faRedo} onClick={startNewGame}/>
+                </div>
             </div>
             {message && <div className='message'>
                 {message}
             </div>}
-            <div className='cube'>
+            <div className='boardContainer'>
                 {[0,1,2,3,4,5].map((row,rowIndex)=>(
-                    <div className={`cube-row ${gameData && row===gameData.rowIndex && error && "error"}`} key={rowIndex}>
+                    <div className={`boardRow ${gameData && row === gameData.rowIndex && error && "error"}`} key={rowIndex}>
                         {
                             [0,1,2,3,4].map((column,colIndex)=>(
-                                <div key={colIndex} className={`letter ${gameData && gameData.boardRowStatus[row]?gameData.boardRowStatus[row][column]:""}`}>
+                                <div key={colIndex} className={`charBox ${gameData && gameData.boardRowStatus[row] ? gameData.boardRowStatus[row][column] : ""}`}>
                                     {gameData && gameData.boardWords[row] && gameData.boardWords[row][column]}
                                 </div>
                             ))

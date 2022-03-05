@@ -1,10 +1,12 @@
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import './keyboard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCheckCircle, faDeleteLeft} from "@fortawesome/free-solid-svg-icons";
 
 const chars = [
     ['q','w','e','r','t','y','u','i','o','p'],
     ['a','s','d','f','g','h','j','k','l'],
-    ['ENTER','z','x','c','v','b','n','m','\u232b']
+    ['ENTER','z','x','c','v','b','n','m','DELETE']
 ];
 
 const Keyboard = (props) => {
@@ -14,7 +16,7 @@ const Keyboard = (props) => {
             props.handleKey("ENTER");
         }
         if(key.key === "Backspace"){
-            props.handleKey("⌫");
+            props.handleKey("DELETE");
         }
         if(key.key.length === 1 && key.key.toLowerCase() !== key.key.toUpperCase()){
             props.handleKey(key.key.toUpperCase())
@@ -37,9 +39,13 @@ const Keyboard = (props) => {
                             <button key={key}
                                     className={`${props.gameData && props.gameData.correctCharArray.includes(key)?"key-correct":
                                         (props.gameData && props.gameData.presentCharArray.includes(key) ?"key-present":
-                                            props.gameData && props.gameData.absentCharArray.includes(key)?"key-absent":"")} `}
+                                            props.gameData && props.gameData.absentCharArray.includes(key)?"key-absent":"")}`}
                                     onClick={()=>{props.handleKey(key)}}>
-                                {key}
+                                {
+                                    key === "ENTER" ? <FontAwesomeIcon icon={faCheckCircle}/>
+                                    : key === "DELETE" ? <FontAwesomeIcon icon={faDeleteLeft}/>
+                                        : key
+                                }
                             </button>
                          ))
                      }

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72d38e98-b533-47fc-85c1-b8732c54e342" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/birhtday_world.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AttemptComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WordComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+    <list default="true" id="72d38e98-b533-47fc-85c1-b8732c54e342" name="Changes" comment="birthday implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CharButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CharButtonComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WordleGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WordleGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/keyboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/keyboard.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +82,16 @@
       <option name="presentableId" value="Default" />
       <updated>1646409662559</updated>
       <workItem from="1646409667866" duration="7781000" />
-      <workItem from="1646422275916" duration="7941000" />
+      <workItem from="1646422275916" duration="14180000" />
     </task>
+    <task id="LOCAL-00001" summary="birthday implementation">
+      <created>1646431106788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646431106788</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +107,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="birthday implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="birthday implementation" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
