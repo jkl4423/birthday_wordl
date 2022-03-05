@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/birthday_wordl/static/css/main.b944f789.css",
+    "main.css": "/birthday_wordl/static/css/main.82e90fe1.css",
     "main.js": "/birthday_wordl/static/js/main.e40de61a.js",
     "index.html": "/birthday_wordl/index.html",
-    "main.b944f789.css.map": "/birthday_wordl/static/css/main.b944f789.css.map",
+    "main.82e90fe1.css.map": "/birthday_wordl/static/css/main.82e90fe1.css.map",
     "main.e40de61a.js.map": "/birthday_wordl/static/js/main.e40de61a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b944f789.css",
+    "static/css/main.82e90fe1.css",
     "static/js/main.e40de61a.js"
   ]
 }
